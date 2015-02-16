@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filtracja>
+  <ustawienia>
+    <zakres_przetwarzania>
+      <!--POW-->
+      <!--przed SignFlash 15.10-15.10-->
+      <!--instalacja SignFlash 16.10-->
+      <!--z SignFlash 17.10-11.11-->
+      <!--deinstalacja SignFlash 12.11-->
+      <!--bez SignFlash 12.11-13.12-->
+      <!--RAD-->
+      <!--przed progami brak-->
+      <!--instalacja progow 18.10-->
+      <!--z progami 19.10-25.11-->
+      <!--deinstalacja progow 26.11-->
+      <!--bez progow 27.11-15.12-->
+      <poczatek>20141001</poczatek>
+      <koniec>20141001</koniec>
+      <!--albo konkretnymi datami - wowczas zakres musi byc pusty!-->
+      <nazwa>wro_swo_test</nazwa>
+      <daty></daty>
+    </zakres_przetwarzania>
+    <sciezka_bazowa>D:\mobis\wroclaw\mickiewicza_test\SWO</sciezka_bazowa>
+    <liczba_pasow>1</liczba_pasow>
+    <!--nazwy katalogow dla poszczegolnych pasow i pieszych-->
+    <prawy_pas>l1</prawy_pas>
+    <lewy_pas>l2</lewy_pas>
+    <piesi>hum</piesi>
+    <nazwa_katalogu_wyjsciowego>wro_swo_test</nazwa_katalogu_wyjsciowego>
+  </ustawienia>
+  <statystyki_dodatkowe>
+    <predkosc_pojazdow_w_punkcie>
+      <wspolrzedna_x_punktu>5.5</wspolrzedna_x_punktu>
+    </predkosc_pojazdow_w_punkcie>
+  </statystyki_dodatkowe>
+  <kryteria_filtracji_konfliktow>
+    <hamowanie>
+      <!--opoznienie ponizej -4 oznacza -4, -5, itd -->
+      <opoznienie_ponizej>-5</opoznienie_ponizej>
+      <predkosc_ponizej> 4</predkosc_ponizej>
+      <roznica_predkosci_powyzej>4</roznica_predkosci_powyzej>
+      <odleglosc_od_pieszego>10</odleglosc_od_pieszego>
+    </hamowanie>
+    <odleglosc_i_predkosc>
+      <odleglosc_od_pieszego>3</odleglosc_od_pieszego>
+      <predkosc_powyzej>6</predkosc_powyzej>
+    </odleglosc_i_predkosc>
+  </kryteria_filtracji_konfliktow>
+  <w_wynikach_filtracji_maja_byc>
+    <niepoprawne>nie</niepoprawne>
+    <poprawne>nie</poprawne>
+    <konflikty_odleglosc>nie</konflikty_odleglosc>
+    <konflikty_hamowanie>tak</konflikty_hamowanie>
+    <wszystko>nie</wszystko>
+  </w_wynikach_filtracji_maja_byc>
+</filtracja>
