@@ -1,5 +1,7 @@
 #include"pojazdy.h"
 
+
+
 Pojazdy::Pojazdy()
 {
 	liczba_plikow_do_zaladowania=0;

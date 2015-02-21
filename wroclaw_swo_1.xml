@@ -17,7 +17,7 @@
       <poczatek>20141001</poczatek>
       <koniec>20141001</koniec>
       <!--albo konkretnymi datami - wowczas zakres musi byc pusty!-->
-      <nazwa>wro_swo_test</nazwa>
+      <nazwa>wro_swo_test_nowy</nazwa>
       <daty></daty>
     </zakres_przetwarzania>
     <sciezka_bazowa>D:\mobis\wroclaw\mickiewicza_test\SWO</sciezka_bazowa>
@@ -26,7 +26,7 @@
     <prawy_pas>l1</prawy_pas>
     <lewy_pas>l2</lewy_pas>
     <piesi>hum</piesi>
-    <nazwa_katalogu_wyjsciowego>wro_swo_test</nazwa_katalogu_wyjsciowego>
+    <nazwa_katalogu_wyjsciowego>wro_swo_test_nowy</nazwa_katalogu_wyjsciowego>
   </ustawienia>
   <statystyki_dodatkowe>
     <predkosc_pojazdow_w_punkcie>
@@ -50,7 +50,7 @@
     <niepoprawne>nie</niepoprawne>
     <poprawne>nie</poprawne>
     <konflikty_odleglosc>nie</konflikty_odleglosc>
-    <konflikty_hamowanie>tak</konflikty_hamowanie>
-    <wszystko>nie</wszystko>
+    <konflikty_hamowanie>nie</konflikty_hamowanie>
+    <wszystko>tak</wszystko>
   </w_wynikach_filtracji_maja_byc>
 </filtracja>

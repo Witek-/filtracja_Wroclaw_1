@@ -20,13 +20,15 @@ public:
 	{
 		struct Rodzaj
 		{
-			bool dobra; 
+			bool dobra; //ogolnie ze dobra
+			bool dluga; //a ponizej szczegoliwa klasyfikacja
+			bool srednia;
 			bool krotka;
 			//bool bardzo_krotka;
 			bool duch;
 			bool pieszy_na_samochodzie;
 			//bool inna;
-			Rodzaj() : dobra(false), krotka(false), /*bardzo_krotka(false),*/ duch(false), pieszy_na_samochodzie(false)/*, inna(false)*/ {}
+			Rodzaj() : dobra(false), dluga(false), srednia(false), krotka(false), /*bardzo_krotka(false),*/ duch(false), pieszy_na_samochodzie(false)/*, inna(false)*/ {}
 		}rodzaj;
 
 		struct Dlugosc

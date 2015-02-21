@@ -30,9 +30,9 @@ int main( int argc, char *argv[] )
 	mickiewicza.analizuj_trajektorie_pieszych();
 
 
-	//zapisanie cech pieszych do pliku
+	//zapisanie cech pieszych do pliku dla potrzeb budowy klasyfikatora trajektorii
 	
-		
+	/*	
 		ofstream plik_trajektorie("piesi_cenaaa.csv",ios::out);
 		for(int i=0;i<mickiewicza.piesi.pieszy.size();i++)
 		{
@@ -77,30 +77,30 @@ int main( int argc, char *argv[] )
 			//plik_trajektorie<<endl;
 
 			//jeszcze inne
-			/*
-			plik_trajektorie<<
-			mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.calkowita<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.efektywna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.na_jezdni_calkowita<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.na_jezdni_efektywna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.minimalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.srednia<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.srednia_z_pozycji<<";"<<
-			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.maksymalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
-			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.srednia<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
-			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.srednia<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
-			//mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_pionie<<";"<<
-			//mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_poziomie<<";"<<
-			//mickiewicza.piesi.pieszy[i].t1.wHour<<
+			
+			//plik_trajektorie<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.calkowita<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.efektywna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.na_jezdni_calkowita<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.dlugosc.na_jezdni_efektywna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.minimalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.srednia<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.srednia_z_pozycji<<";"<<
+			////mickiewicza.piesi.pieszy[i].trajektoria.predkosc.maksymalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
+			////mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.srednia<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
+			////mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.srednia<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
+			////mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_pionie<<";"<<
+			////mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_poziomie<<";"<<
+			////mickiewicza.piesi.pieszy[i].t1.wHour<<
 
-			endl;
-			*/
+			//endl;
+			
 
 			//kombinacyjne
 			//5 ma wszystko
@@ -135,29 +135,29 @@ int main( int argc, char *argv[] )
 			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.srednia_z_pozycji<<";"<<
 			//godzina tylko do statystyk, nie jako cecha!
 			mickiewicza.piesi.pieszy[i].t1.wHour<<
-		/*	
-			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.maksymalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.predkosc.odch_st<<";"<<
+		
+			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.maksymalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.predkosc.odch_st<<";"<<
+			//
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.srednia<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.srednia<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna<<";"<<
+
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
+
+			//mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_pionie<<";"<<
+			//mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_poziomie<<";"<<
+			//mickiewicza.piesi.pieszy[i].t1.wHour<<
 			
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.srednia<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.srednia<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna<<";"<<
-
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pozioma.minimalna<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.maksymalna-mickiewicza.piesi.pieszy[i].trajektoria.pozycja.pionowa.minimalna<<";"<<
-
-			mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_pionie<<";"<<
-			mickiewicza.piesi.pieszy[i].trajektoria.wspolczynnik_drgan_w_poziomie<<";"<<
-			mickiewicza.piesi.pieszy[i].t1.wHour<<
-			*/
 			endl;
 		}
 		plik_trajektorie.close();
     
-
+*/
 	//koniec
 
 	cout << "\nAnaliza predkosci (i przyspieszenia)...";

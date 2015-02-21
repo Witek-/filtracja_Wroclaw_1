@@ -1,5 +1,12 @@
 #include"pojazd.h"
 
+struct Wspolrzedne_przejscia
+	{
+		float x1, x2;
+		float y1, y2;
+
+	}wp;
+
 Pojazd::Pojazd()
 {
 	liczba_pieszych=0;
@@ -32,6 +39,7 @@ int Pojazd::laduj(string nazwa_pliku, bool pozycja_dodatnia_predkosc_ujemna)
 	}
 	symbol = object.child_value("symbol");
 	manufacturer=object.child_value("manufacturer");
+	model=object.child_value("model");
 	type=object.child_value("type");
 	id = object.child_value("id");
 	xml_node n_frames = doc.child("root").child("frames");
@@ -99,7 +107,7 @@ int Pojazd::analizuj_predkosc(float odl_min, float odl_max, float w_punkcie)
 
 		//zapisuje czy pojazd jest na pasach czy poza nimi (chodzi o rejestracje!)
 		for(int i=0;i<frame.size();i++)
-			if(frame[i].pos.x>=-2 && frame[i].pos.x<=2) frame[i].pos.na_pasach=true;
+			if(frame[i].pos.x>=wp.x1 && frame[i].pos.x<=wp.x2) frame[i].pos.na_pasach=true;
 			else
 				frame[i].pos.na_pasach=false;
 

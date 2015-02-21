@@ -30,7 +30,9 @@ public:
 
 	}wspolrzedne_przejscia;
 
-	CvRTrees forest;
+	CvRTrees forest; //stary klasyfikator ogolny dla Warszawy
+	//klasyfikatory dedykowane dla Wroclawia
+	CvRTrees cen_dx, cen_dsk, swo_dx, swo_dsk;
 	struct Zakres_przetwarzania
 	{
 		string poczatek;
